@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E1D4C9;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* styles for media */
+
+.navDsMb {
+    display: none;
+}
+
+/* styles for header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+header .logo {
+    width: 100px;
+    height: 60px;
+}
+
+.nav ul {
+    display: flex;
+    color: #403F3D;
+    gap: 40px;
+    list-style: none;
+}
+
+.burgerMenu {
+    position: absolute;
+    opacity: 0;
+}
+
+.menuLink {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    color: #403F3D;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.menuLink::before {
+    position: absolute;
+    content: '';
+    top: 24px;
+    width: 100%;
+    height: 1px;
+    background-color: #403F3D;
+    transform: scaleX(0);
+    transition: transform 500ms ease-out;
+}
+
+
+.menuItem {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    color: #403F3D;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.menuItem::before {
+    position: absolute;
+    content: '';
+    top: 24px;
+    width: 100%;
+    height: 1px;
+    background-color: #403F3D;
+    transform: scaleX(0);
+    transition: transform 500ms ease-out;
+}
+
+
+
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.menuIcon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* section enjoy */
+.enjoy {
+    position: relative;
+    display: flex;
+   
+}
+
+.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.videoContainer video {
+    width: 100%;
+    /* height: 112%; */
+    border-radius: 40px;
+    /* object-fit: cover; */
+}
+.enjoy .innerBox {
+    position: relative;
+    z-index: 1;
+    padding: 100px;
+    margin-bottom: 100px;
+    width: 55%;
+}
+
+
+.sectionTitle {
+    font-size: 72px;
+    line-height: 75.6px;
+    font-weight: 600;
+    color: #E1D4C9;
+}
+
+
+.enjoy p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #E1D4C9;
+    margin: 40px 0;
+    line-height: 24px;
+}
+
+.navBtn {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    text-align: center;
+    height: 64px;
+    border-radius: 100px;
+    border: none;
+    background-color: #E1D4C9;
+    cursor: pointer;
+}
+
+.textBtn {
+    position: absolute;
+    left: 78px;
+    bottom: 20px;
+    color: #403F3D;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+}
+
+.coffee-cup {
+    position: absolute;
+    right: 65px;
+    bottom: 24px;
+    opacity: 0;
+}
+
+
+/* favorite */
+
+.description {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    font-style: normal
+}
+
+.favorite .description {
+    text-align: center;
+    font-style: normal;
+}
+
+.textAccent {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.sliderBox {
+    display: flex;
+    height: 684px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.sliderBtnNext, .sliderBtnPrev{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #665F55;
+    font-size: 19px;
+    background-color: #E1D4C9;
+    cursor: pointer;
+    transition: background-color 2.5s ease-out;
+    transition: color 0.5s ease-out;
+    z-index: 10;
+}
+
+.sliderBtnNext {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.sliderBtnPrev {
+    position: absolute;
+    top: 50px;
+    
+}
+
+
+.slide {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+
+.slide .smooth {
+    transition: left 1s ease-out;
+}
+.slide img {
+    height: 480px;
+}
+.coffeeTitle {
+    font-family: 'Inter';
+    margin-top: 20px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.coffeeDesc {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.coffeePrice {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.sliderLines {
+    width: 144px;
+    display: flex;
+    gap: 12px;
+    margin: 40px 0 60px 0;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #C1B6AD
+}
+
+
+.progressBar {
+    height: 4px;
+    background-color: #ccc;
+    width: 0;
+    transition: width 6s ease;
+}
+
+.progressBar.active {
+    background-color: #665F55
+}
+
+
+/* section -about */
+
+.about .description {
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.aboutContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.imgWrapper1,
+.imgWrapper2,
+.imgWrapper3,
+.imgWrapper4 {
+    width: 43.7vw;
+    height: 590px;
+    border-radius: 20px;
+    background-size: 110%;
+    background-position: center;
+    transition: background-size 500ms ease-out;
+}
+
+.imgWrapper1 {
+    background-image: url('./assets/images/about-1.png');
+    object-fit: cover;
+}
+
+.imgWrapper2 {
+    background-image: url('./assets/images/about-2.png');
+}
+
+.imgWrapper3 {
+    background-image: url('./assets/images/about-3.png');
+}
+
+.imgWrapper4 {
+    background-image: url('./assets/images/about-4.jpg');
+}
+
+
+.aboutContainer .short {
+    height: 430px;
+}
+
+.aboutContainer div:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+/* section -mobile */
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+    gap: 100px;
+    margin: 55px 0 100px 0;
+}
+
+.mobileDesc {
+    margin-top: 147px;
+}
+
+.mobile img {
+    width: 630px;
+   
+}
+
+
+.mobile p {
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btnWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.appBtn {
+    display: flex;
+    cursor: pointer;
+    gap: 8px;
+    align-items: center;
+    width: 200px;
+    padding: 12px 20px;
+    border: 1px solid #665F55;
+    color: #665F55;
+    border-radius: 100px;
+    background-color: #E1D4C9;
+    transition: background-color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+
+}
+
+
+
+.appBtn svg path {
+    width: 36px;
+    height: 36px;
+    fill: #403F3D;
+    transition: fill 500ms ease-in
+}
+
+/*  */
+
+
+
+.btnText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: left; */
+}
+
+.btnText span {
+    font-size: 10px;
+}
+
+/* footer */
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: #665F55;
+    padding: 100px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+
+.left {
+    /* width: 530px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contactsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textLight {
+    color: #E1D4C9;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+.socialIcons {
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    gap: 12px;
+}
+
+.round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #665F55;
+    border: 1px solid #C1B6AD;
+    transition: background-color 0.5s ease-out;
+}
+
+
+
+.contactTitle {
+    color: #E1D4C9;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.contactText {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+
+}
+
+.linkContact {
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #E1D4C9;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.linkContact:after {
+    position: absolute;
+    width: 182px;
+    content: '';
+    height: 2px;
+    background-color: #E1D4C9;
+    bottom: -4px;
+    transform: scaleX(0);
+    transition: transform 500ms ease-out;
+}
+
+
+
+.linkText {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #E1D4C9;
+}
+
+

@@ -1,0 +1,383 @@
+/* style for menu html */
+
+.offer {
+    display: flex;
+    flex-direction: column;
+}
+
+.textDark {
+    width: 60%;
+    align-self: center;
+    font-size: 60px;
+    line-height: 125%;
+    font-style: normal;
+    font-weight: 600;
+    color: #403F3D;
+    text-align: center;
+}
+
+
+.offer .textAccent {
+    font-size: 60px;
+    line-height: 125%;
+    font-style: italic;
+    font-weight: 600;
+
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 40px 0;
+}
+
+.menuBtn {
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 46px;
+    padding: 8px 16px 8px 8px;
+    line-height: 24px;
+    border-radius: 100px;
+    background-color: #E1D4C9;
+    border: 1px solid #C1B6AD;
+    transition: all 0.5s ease-out;
+}
+
+.menuBtn svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.menuBtnDark {
+    background-color: #665F55;
+    cursor: default;
+}
+
+.menuBtnDark span {
+    color: #E1D4C9;
+}
+
+.menuBtn span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* style menu Container */
+
+.default {
+    cursor: default;
+    display: flex;
+    color: #403F3D;
+    text-decoration: none;
+    border-bottom: 1px solid #403F3D;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.offer {
+    margin-bottom: 100px;
+}
+
+.menuCardContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.menuCard {
+    max-width: 100%;
+    width: 100%;
+    height: 506px;
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+}
+
+
+
+
+.Irish.coffee,
+.Kahlua.coffee,
+.Honey.raf,
+.Ice.cappuccino,
+.Espresso,
+.Latte,
+.Latte.macchiato,
+.Coffee.with.cognac,
+.Moroccan,
+.Ginger,
+.Cranberry,
+.Sea.buckthorn,
+.Marble.cheesecake,
+.Red.velvet,
+.Cheesecakes,
+.Creme.brulee,
+.Pancakes,
+.Honey.cake,
+.Chocolate.cake,
+.Black.forest {
+    max-width: inherit;
+    height: 310px;
+    border-radius: 40px;
+    background-size: 110%;
+    background-position: center;
+    transition: background-size 0.5s ease-out;
+
+}
+
+.Black.forest {
+    background-image: url('./assets/images/dessert-8.png');
+}
+
+.Chocolate.cake {
+    background-image: url('./assets/images/dessert-7.png');
+}
+
+.Honey.cake {
+    background-image: url('./assets/images/dessert-6.png');
+}
+
+.Pancakes {
+    background-image: url('./assets/images/dessert-5.png');
+}
+
+.Creme.brulee {
+    background-image: url('./assets/images/dessert-4.png');
+}
+
+.Cheesecakes {
+    background-image: url('./assets/images/dessert-3.png');
+}
+
+.Red.velvet {
+    background-image: url('./assets/images/dessert-2.png');
+}
+
+.Marble.cheesecake {
+    background-image: url('./assets/images/dessert-1.png');
+}
+
+.Sea.buckthorn {
+    background-image: url('./assets/images/tea-4.png');
+}
+
+.Cranberry {
+    background-image: url('./assets/images/tea-3.png');
+}
+
+.Ginger {
+    background-image: url('./assets/images/tea-2.png');
+}
+
+.Moroccan {
+    background-image: url('./assets/images/tea-1.png');
+}
+
+.Irish.coffee {
+    background-image: url('./assets/images/coffee-1.png');
+}
+
+.Kahlua.coffee {
+    background-image: url('./assets/images/coffee-2.png');
+}
+
+.Honey.raf {
+    background-image: url('./assets/images/coffee-3.png');
+}
+
+.Ice.cappuccino {
+    background-image: url('./assets/images/coffee-4.png');
+}
+
+.Espresso {
+    background-image: url('./assets/images/coffee-5.png');
+}
+
+.Latte {
+    background-image: url('./assets/images/coffee-6.png');
+}
+
+.Latte.macchiato {
+    background-image: url('./assets/images/coffee-7.png');
+}
+
+.Coffee.with.cognac {
+    background-image: url('./assets/images/coffee-8.png');
+}
+
+
+
+.menuInfo {
+    height: 196px;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menuCard h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.menuCard p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #403F3D;
+
+}
+
+.menuCard span {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    color: #403F3D;
+}
+
+.refreshBtn {
+    display: none;
+}
+
+/* modal */
+
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    display: flex;
+    padding: 16px;
+    background-color: #E1D4C9;
+    border-radius: 40px;
+    width: 58.82%;
+    z-index: 100;
+    overflow: hidden;
+    column-gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.modalItem {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.modalTitle {
+  
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.sizeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.additivesContainer,
+.sizeContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.productPrice {
+    font-size: 24px;
+    display: flex;
+    gap: 20%;
+    /* justify-content: space-between; */
+}
+
+.infoEmpty {
+    display: flex;
+    gap: 8px;
+}
+
+.infoEmpty img {
+    width: 16px;
+    height: 16px;
+}
+
+.infoEmpty p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.closeModalBtn {
+    display: flex;
+    padding: 10px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #665F55;
+    background-color: #E1D4C9;
+    align-self: stretch;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.modal .Irish.coffee,
+.modal .Kahlua.coffee,
+.modal .Honey.raf,
+.modal .Ice.cappuccino,
+.modal .Espresso,
+.modal .Latte,
+.modal .Latte.macchiato,
+.modal .Coffee.with.cognac,
+.modal .Moroccan,
+.modal .Ginger,
+.modal .Cranberry,
+.modal .Sea.buckthorn,
+.modal .Marble.cheesecake,
+.modal .Red.velvet,
+.modal .Cheesecakes,
+.modal .Creme.brulee,
+.modal .Pancakes,
+.modal .Honey.cake,
+.modal .Chocolate.cake,
+.modal .Blakc.forest {
+    width: 340px;
+    height: 340px;
+    background-size: cover;
+}
